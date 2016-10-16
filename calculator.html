@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <meta name="description" content="Calculator for freecodecamp task.">
+    <meta name="keywords" content="calculartor, javascript, freecodecamp">
+    <link rel="stylesheet" type="text/css" media="screen" href="mystyle.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>	
+  </head>
+  <body>
+    <div class="container">
+    	<div>
+    		<h1 class="title">Calculator</h1>
+    	</div>
+    	<div class="row" id="screen">
+    		<p class="col-md-12 col-xs-12" id="result">0</p>
+    		<p class="col-md-12 col-xs-12" id="calculation">0</p>
+    	</div>
+    	<div class="row">
+    		<button class="btn btn-default col-md-3 col-xs-3" type="submit" id = "clearAll">AC</button>
+    		<button class="btn btn-default col-md-3 col-xs-3" type="submit" id = "clear">C</button>
+    		<button class="btn btn-default col-md-3 col-xs-3 operator" type="submit" value="/">÷</button>
+    		<button class="btn btn-default col-md-3 col-xs-3 operator" type="submit" value="*">&ast;</button>
+    	</div>
+    	<div class="row">
+    		<button class="btn btn-default col-md-3 col-xs-3 number" type="submit" value="7">7</button>
+    		<button class="btn btn-default col-md-3 col-xs-3 number" type="submit" value="8">8</button>
+    		<button class="btn btn-default col-md-3 col-xs-3 number" type="submit" value="9">9</button>
+    		<button class="btn btn-default col-md-3 col-xs-3 operator" type="submit" value="-">-</button>
+    	</div>
+    	<div class="row">
+    		<button class="btn btn-default col-md-3 col-xs-3 number" type="submit" value="4">4</button>
+    		<button class="btn btn-default col-md-3 col-xs-3 number" type="submit" value="5">5</button>
+    		<button class="btn btn-default col-md-3 col-xs-3 number" type="submit" value="6">6</button>
+    		<button class="btn btn-default col-md-3 col-xs-3 operator" type="submit" value="+">&plus;</button>
+    	</div>
+    	<div class="row">
+    		<div class="col-md-6 col-xs-6">
+    		  <div class="row">
+    		  	<button class="btn btn-default col-md-6 col-xs-6 number" type="submit" value="1">1</button>
+    		  	<button class="btn btn-default col-md-6 col-xs-6 number" type="submit" value="2">2</button>
+    		  </div>
+    		  <div class="row">
+    		  	<button class="btn btn-default col-md-12 col-xs-12 number null" type="submit" value="0">0</button>
+    		  </div>
+    		</div>
+    		<div class="col-md-3 col-xs-3">
+    		  <div class="row">
+    		  	<button class="btn btn-default col-md-12 col-xs-12 number" type="submit" value="3">3</button>
+    		  </div>
+    		  <div class="row">
+    		  	<button class="btn btn-default col-md-12 col-xs-12 point" type="submit" value=".">&period;</button>
+    		  </div>
+    		</div>
+    		<div class="col-md-3 col-xs-3">
+    		  <div class="row" >
+    		  	<button class="btn btn-default col-md-12 col-xs-12" type="submit" id="equal" value="=">&equals;</button>
+    		  </div>
+    		</div>
+    	</div>
+    </div>
+  </body>
+</html>
